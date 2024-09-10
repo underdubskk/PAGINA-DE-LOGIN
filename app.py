@@ -44,9 +44,23 @@ def main(page:ft.Page):
                                 height = 40,
                                 border_radius = 40,
                                 prefix_icon = ft.icons.PERSON,
+                                text_vertical_align = 1,
                                 keyboard_type = ft.KeyboardType.EMAIL
-                            )
-                        ])
+                            ),
+
+                            ft.TextField(
+                                hint_text = 'Digite a sua senha',
+                                width = 300,
+                                height = 40,
+                                border_radius = 40,
+                                prefix_icon = ft.icons.LOCK,
+                                text_vertical_align = 1,
+                                password = True,
+                                can_reveal_password = True,
+                                keyboard_type = ft.KeyboardType.VISIBLE_PASSWORD
+                            ),
+
+                        ],spacing = 8)
               
                     ],horizontal_alignment = 'center')
 
